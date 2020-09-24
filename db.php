@@ -6,8 +6,15 @@ $username = getenv("DATABASE_USER");
 $password = getenv("DATABASE_PASSWORD");
 $dbname = getenv("DATABASE_NAME");
 
+echo $servername;
+echo $username;
+echo $password;
+echo $dbname;
+
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
+echo $conn;
 
 // Check connection
 if ($conn->connect_error) {
