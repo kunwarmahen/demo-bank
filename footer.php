@@ -5,6 +5,7 @@
 
 <?php
     printf("DEBUG: App node => %s\n", $_SERVER['HOSTNAME']);
+    printf("DEBUG: App node => %s\n", getenv("HOSTNAME"));
 ?>
 
 </div>
